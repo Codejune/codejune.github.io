@@ -1,0 +1,64 @@
+title: Code Folio*
+email: kbj9704@gmail.com
+description: |
+  숭실대학교 컴퓨터학부 16학번 & GDG SSU Member
+  오픈소스로 세상을 연결해 나가고 싶어하는 대학생입니다.
+baseurl: ''
+url: '//codejune.github.io'
+
+repository: codejune/codejune.github.io
+
+permalink: /:year/:month/:day/:title/
+
+excerpt_separator: <!--more-->
+
+markdown: kramdown
+
+krandown:
+  input: GFM
+  highlighter: rouge
+
+gems:
+  - jekyll-paginate
+
+# Show Page List Count
+paginate: 5
+paginate_path: '/page/:num/'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+keep_files: [assets, files]
+
+author: kbj9704@gmail.com.com
+image: '/assets/images/default_blog_cover.jpg'
+asset_url: /assets
+
+google_analytics:
+  ua: 'UA-80859651-1'
+facebook:
+  app_id: '1086180294790676'
+  username: codejune
+google_plus:
+  username: codejune
+github:
+  username: codejune

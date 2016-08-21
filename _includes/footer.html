@@ -1,0 +1,42 @@
+<div id="footer" class="container-fluid">
+    <ul id="links">
+        {% if site.github %}
+        <li>
+            <a id="link-github" href="http://github.com/{{ site.github.username }}" target="_blank">
+                <span class="sr-only">github</span>
+            </a>
+        </li>
+        {% endif %}
+        {% if site.facebook %}
+        <li>
+            <a id="link-facebook" href="http://facebook.com/{{ site.facebook.username }}" target="_blank">
+                <span class="sr-only">facebook</span>
+            </a>
+        </li>
+        {% endif %}
+        {% if site.twitter %}
+        <li>
+            <a id="link-twitter" href="http://twitter.com/{{ site.twitter.username }}" target="_blank">
+                <span class="sr-only">twitter</span>
+            </a>
+        </li>
+        {% endif %}
+        <li>
+            <a id="link-rss" href="/rss" target="_blank">
+                <span class="sr-only">rss</span>
+            </a>
+        </li>
+    </ul>
+    <ul id="footer-menu">
+        <li><a href="//www.ssu.ac.kr">Soongsil Univ.</a></li>
+        <li><a href="//developers.google.com/groups/chapter/100263126816983481169">GDG SSU</a></li>
+        <li><a href="//kbj9704.blog.me">Naver Blog</a></li>
+    </ul>
+    <p id="copyright">
+        <a href="//www.codejune.net">&copy; 2016. Codejune</a>
+        All rights reserved.
+        <br>
+        Powered by
+        <a href="//www.github.com">Github</a>, <a href="//tech.kakao.com">Base on KakaoBlog</a>
+    </p>
+</div><!--#footer-->

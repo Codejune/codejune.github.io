@@ -1,0 +1,20 @@
+<div id="header">
+    <button id="menu-toggle" type="button">
+        <span class="sr-only">Toggle Navigation Menu</span>
+    </button>
+    <button id="search-toggle" type="button">
+        <span class="sr-only">Toggle Search Form</span>
+    </button>
+    <a id="logo" href="/">
+        <span class="sr-only">Code Folio*</span>
+    </a>
+    <form id="search">
+        <input id="searchQueryEdit" name="q" type="search" placeholder="Search..." value="" />
+    </form>
+    <ul id="menu" class="nav">
+        <li class="{% if page.url != '/introduce/' and page.url != '/project/' %} active {% endif %}"><a href="{{ base_path }}/">블로그</a></li>
+        <li class="{% if page.url == '/introduce/' %} active {% endif %}"><a href="{{ base_path }}/introduce/">소개</a></li>
+        <li class="{% if page.url == '/project/' %} active {% endif %}"><a href="{{ base_path }}/project/">프로젝트</a></li>
+        <!--<li class="{% if page.url == '/events/' %} active {% endif %}"><a href="{{ base_path }}/events/">기술행사</a></li>-->
+    </ul>
+</div><!-- #header -->
