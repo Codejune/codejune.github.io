@@ -4,7 +4,8 @@ description: |
   숭실대학교 컴퓨터학부 16학번 & GDG SSU Member
   오픈소스로 세상을 연결해 나가고 싶어하는 대학생입니다.
 baseurl: ''
-url: '//codejune.github.io'
+url: 'http://codejune.github.io'
+timezone: Asia/Seoul
 
 repository: codejune/codejune.github.io
 
